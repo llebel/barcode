@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
+GET     /{<[0-9]+>from}/{<[0-9]+>to}/{label}    Application.index
 GET     /barcode/{data}                         Application.barcode
 
 # Ignore favicon requests

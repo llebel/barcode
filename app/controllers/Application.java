@@ -18,8 +18,8 @@ import play.mvc.Http.Response;
 
 public class Application extends Controller {
 
-	public static void index() {
-		render();
+	public static void index(String label, long from, long to) {
+		render(from, to, label);
 	}
 
 	public static void barcode(String data) {
