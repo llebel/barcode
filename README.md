@@ -1,7 +1,11 @@
 barcode generator
 =================
 
-Simple playframwork app rendering barcodes
+Simple playframework app rendering barcodes
+
+Request parameters are (see conf/routes) :
+  /{<[0-9]+>from}/{<[0-9]+>to}/{label}
+
 eg.: http://localhost:9000/9000006001/9000006015/%My20Barcode
 
 Dependencies
