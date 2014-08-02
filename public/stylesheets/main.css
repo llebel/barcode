@@ -1,0 +1,16 @@
+.container {
+	float: left;
+	width: 100%;
+}
+
+.barcode_block {
+	display: inline-block;
+}
+
+.barcode_item {
+
+}
+
+.barcode_label {
+	text-align: center;
+}
