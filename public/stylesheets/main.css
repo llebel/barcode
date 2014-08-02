@@ -5,6 +5,9 @@
 
 .barcode_block {
 	display: inline-block;
+	border: 1px black solid;
+	border-collapse: collapse;;
+	padding: 10px 5px 10px 5px;
 }
 
 .barcode_item {
@@ -13,4 +16,6 @@
 
 .barcode_label {
 	text-align: center;
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-size: 12px;
 }
