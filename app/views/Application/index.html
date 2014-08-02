@@ -1,4 +1,11 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Barcode generator' /}
 
-#{welcome /}
+<div class="container">
+#{list items:from..to, as:'data'}
+	<div class="barcode_block">
+		<div class="barcode_item"><img src="/barcode/${data}" /></div>
+		<div class="barcode_label">${label}</div>
+	</div>
+#{/list}
+</div>
