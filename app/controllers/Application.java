@@ -24,7 +24,8 @@ public class Application extends Controller {
 
 	public static void barcode(String data) {
 		try {
-			Barcode barcode = BarcodeFactory.createMonarch(data);
+			Barcode barcode = BarcodeFactory.createCode128(data);
+			barcode.setBarHeight(50);
 
 			BufferedImage bi = BarcodeImageHandler.getImage(barcode);
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
